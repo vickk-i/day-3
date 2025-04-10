@@ -48,7 +48,12 @@ CREATE TABLE order_items (
 
 ```
 ![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true)
-https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121457.png?raw=true
+![Alt text]( https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121457.png?raw=true
+)
+
+![Alt text](path_to_image)
+
+
 ### 📦 2. Insert Values
 
 ```sql
@@ -83,6 +88,8 @@ INSERT INTO order_items (order_id, prdt_id, quantity, unit_price) VALUES
 ```
 
 ---
+
+![Alt text](path_to_image)
 
 ### ✅ a. **SELECT, WHERE, ORDER BY, GROUP BY**
 
