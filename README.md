@@ -47,7 +47,7 @@ CREATE TABLE order_items (
 );
 
 ```
-![Alt text]([path_to_image](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true))
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true)
 
 ### 📦 2. Insert Values
 
