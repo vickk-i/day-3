@@ -45,8 +45,8 @@ CREATE TABLE order_items (
     quantity INT,
     unit_price DECIMAL(10, 2)
 );
-![Alt text](path_to_image)
-https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true
+![Alt text]([path_to_image](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true))
+
 
 
 ```
