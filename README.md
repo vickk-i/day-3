@@ -47,11 +47,9 @@ CREATE TABLE order_items (
 );
 
 ```
-![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true)
-![Alt text]( https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121457.png?raw=true
-)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120006.png?raw=true)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120006.png?raw=true)
 
-![Alt text](path_to_image)
 
 
 ### 📦 2. Insert Values
@@ -89,7 +87,13 @@ INSERT INTO order_items (order_id, prdt_id, quantity, unit_price) VALUES
 
 ---
 
-![Alt text](path_to_image)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120043.png?raw=true)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120055.png?raw=true
+)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120102.png?raw=true)
+
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120113.png?raw=true)
+
 
 ### ✅ a. **SELECT, WHERE, ORDER BY, GROUP BY**
 
@@ -107,6 +111,11 @@ ORDER BY total_orders DESC;
 ```
 
 ---
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120238.png?raw=true)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120309.png?raw=true)
+
+
+
 
 ### ✅ b. **JOINS (RIGHT JOIN)**
 
@@ -118,6 +127,9 @@ RIGHT JOIN customers c ON o.cust_id = c.cust_id;
 ```
 
 ---
+
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120834.png?raw=true)
+
 
 ### ✅ c. **Subqueries**
 
@@ -139,6 +151,9 @@ WHERE price > (
 ```
 
 ---
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20120933.png?raw=true)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121037.png?raw=true)
+
 
 ### ✅ d. **Aggregate Functions (SUM, AVG)**
 
@@ -160,6 +175,10 @@ GROUP BY c.name;
 
 ---
 
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121116.png?raw=true)
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121146.png?raw=true)
+
+
 ### ✅ e. **Create Views for Analysis**
 
 ```sql
@@ -170,32 +189,25 @@ FROM customers c
 LEFT JOIN orders o ON c.cust_id = o.cust_id
 GROUP BY c.cust_id;
 
--- 2. View: product revenue summary
-CREATE VIEW product_revenue AS
-SELECT p.prdt_id, p.name, SUM(oi.quantity * oi.unit_price) AS revenue
-FROM products p
-JOIN order_items oi ON p.prdt_id = oi.prdt_id
-GROUP BY p.prdt_id;
+SELECT *FROM customer_summary1;
 ```
 
 ---
+
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121457.png?raw=true)
 
 ### ✅ f. **Optimize Queries with Indexes**
 
 ```sql
 -- Index on orders.cust_id to speed up joins
 CREATE INDEX idx_orders_cust_id ON orders(cust_id);
-
--- Index on order_items.prdt_id for faster revenue queries
-CREATE INDEX idx_order_items_prdt_id ON order_items(prdt_id);
 ```
 
 ---
 
-## 📸 Screenshots
-- Screenshots of each command's output are included below for reference.
+![Alt text](https://github.com/vickk-i/day-3/blob/main/Screenshot%202025-04-10%20121606.png?raw=true)
 
----
+
 
 ## 🧠 Summary
 In this project, we:
@@ -203,7 +215,3 @@ In this project, we:
 - Analyzed data using SQL queries, including joins (RIGHT JOIN), aggregate functions, and subqueries.
 - Created views to simplify reporting and optimized queries using indexes.
 - Practiced real-world data extraction and reporting.
-
----
-
-Let me know if you need any further changes!
